@@ -1,0 +1,34 @@
+1° Criando pasta -> sistema
+2° Dentro da pasta -> sistema -> index.php
+3° Entrado Banco de dados - localhost/phpmyadmin/ criando dados tela de login
+4° Criando banco de dados (portal) utf8_general_ci
+5° criando tabela cadastro (usuarios) do sistema tela login
+***Campos da tabela usuarios***
+- id - AUTO_INCREMENT
+- nome - varchar(50)
+- cpf - varchar(20)
+- usuario - varchar(50)
+- senha - varchar(20)
+- senha_crip - varchar(150)
+- nivel - varchar(20)
+- foto - varchar(100)
+- id_pessoa - int
+- ativo - varchar(5)
+- data - date
+
+6° Criando estrutura HTML - index.php - criando formulário e o botão
+7° Criando autenticar.php
+8° inserindo dados na tabela (usuarios)
+- inserindo código php no início da página index.php 
+- para inserir um usuário
+- na primeira linha index.php <?php   ?>
+9° Criando arquivo conexao.php
+10° Declarando variáveis para fazer conexao.php banco com PDO 
+-tratamento de erro dentro conexao
+<?php
+//CRIAR UM USUÁRIO  ADMINISTRADOR CASO NÃO EXITA NENHUM USUÁRIO
+require_once('conexao.php');
+?>
+
+1° index.php  - 2° autenticar.php   - 3° conexao.php
+aula27 #f2906
